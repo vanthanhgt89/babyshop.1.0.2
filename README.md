@@ -70,5 +70,5 @@ Lớp caching thì không lưu dữ liệu ở lần đầu. Khi nhận yêu c�
 [xem thêm tại đây] (https://redis.io/commands#hash)
 
 ###
-[Example](https://github.com/bradtraversy/redusers/blob/master/app.js)
+[Example về redis](https://github.com/bradtraversy/redusers/blob/master/app.js)
 
