@@ -2,7 +2,24 @@
 ### Công việc đã thực hiện
 * Render trang sản phẩm, chi tiết
 * Làm xong các router ứng với từng category và sub_category
+* Dùng module **speakingurl** để parser title sang chuẩn SEO
+```js
+const getSlug = require('speakingurl')
+let SEO = getSlug(data, {lang: 'vn'})
+```
 * Sử dụng thêm redis để caching
+```js
+const redis = require('promise-redis')(function (resolver) {
+    return new Promise(resolver);
+});
+const client = redis.createClient()
+
+client.on('connect', () => {
+    console.log('connected');
+})
+
+```
+
 # Redis Server
 ## Dùng Resdis để cache ngoài dữ liệu từ dữ liệu tử database trả về
 ### Caching là gì
